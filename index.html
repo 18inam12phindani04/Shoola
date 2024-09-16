@@ -3,45 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
+    <title>Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url();
+            background-size: cover;
+        }
+        h2, p {
+            color: white;
+        }
+        .category-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .category-section h3 {
+            color: black;
+            margin-bottom: 20px;
+        }
+        .category-images {
+            display: flex;
+            justify-content: center;
+        }
+        .category-images img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            margin: 0 15px;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: black;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Products.html" style="color: black" >Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html" style="color: black;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: black;">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-      <div class="container">
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container">
         <div class="row align-items-start">
-          <div class="col">
-            <h2>COMPANY PROFILE</h2>
-             <p>In addition to manufacturing sportswear and equipment, the company operates retail stores under the Niketown name. Nike sponsors many high-profile athletes and sports teams around the world, with the highly recognized trademarks of "Just Do It" and the Swoosh logo. As of 2024, it employed 83,700 people worldwide.</p>
-             <button>add to cart</button>
-          </div>
-          <div class="col">
-            <img src="/Nike.png.png">
-          </div>
+            <div class="col">
         </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="category-section">
+        <h3>Shop by Category</h3>
+        <div class="category-images">
+            <div>
+              <a href="man.html"><img src="/images/nike-just-do-itmen.jpg" alt="Men's Category">
+                <h4>Men</h4></a>
+            </div>
+            <div>
+              <a href="woman.html"><img src="/images/nike-just-do-it.jpg" alt="Women's Category">
+                <h4>Women</h4></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

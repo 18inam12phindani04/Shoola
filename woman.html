@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .images-grid img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            text-align: center;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .title {
+            text-align: center;
+            margin: 20px;
+            color: black;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-none">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="details">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </nav>
+    <div class="content">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html" style="color: black;">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Products.html" style="color: black" >Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html" style="color: black;">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html" style="color: black;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
+            <div class="title">Women's Product List</div>
+            <div class="container">
+                <div class="images-grid">
+                    <div onclick="viewProduct('Woman Product 1', 'R1000', 'This is the firth lady\'s shoe.', 'images/takkie_snekker.png')">
+                        <img src="images/takkie_snekker.png" alt="Women Product 1">
+                        <div class="product-info">
+                            <p>Shoe Name 1</p>
+                            <p>R1000</p>
+                        </div>
+                    </div>
+                    <div onclick="viewProduct('Woman Product 2', 'R1200', 'lady in style\'s shoe.', 'images/sneaker.png')">
+                        <img src="images/sneaker.png" alt="Women Product 2">
+                        <div class="product-info">
+                            <p>Shoe Name 2</p>
+                            <p>R1200</p>
+                        </div>
+                    </div>
+                    <div onclick="viewProduct('Woman Product 3', 'R1100', 'This is the sixth lady\'s shoe.', 'images/Woman_nike.png')">
+                        <img src="images/Woman_nike.png" alt="Women Product 3">
+                        <div class="product-info">
+                            <p>Shoe Name 3</p>
+                            <p>R1100</p>
+                        </div>
+                    </div>
+                    <div onclick="viewProduct('Woman Product 4', 'R900', 'This is the style lady\'s shoe.', 'images/takkie_snekker.png')">
+                        <img src="images/takkie_snekker.png" alt="Women Product 4">
+                        <div class="product-info">
+                            <p>Shoe Name 4</p>
+                            <p>R900</p>
+                        </div>
+                    </div>
+                    <div onclick="viewProduct('Woman Product 5', 'R950', 'This is the eighth lady\'s shoe.', 'images/Woman.png')">
+                        <img src="images/Woman.png" alt="Women Product 5">
+                        <div class="product-info">
+                            <p>Shoe Name 5</p>
+                            <p>R950</p>
+                        </div>
+                    </div>
+                    <div onclick="viewProduct('Woman Product 6', 'R1300', 'This is the eighth lady\'s shoe.', 'images/takkie_snekker.png')">
+                        <img src="images/takkie_snekker.png" alt="Women Product 6">
+                        <div class="product-info">
+                            <p>Shoe Name 6</p>
+                            <p>R1300</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div><script>
+        function viewProduct(name, price, description, image) {
+            const url = `product_detail.html?name=${encodeURIComponent(name)}&price=${encodeURIComponent(price)}&description=${encodeURIComponent(description)}&image=${encodeURIComponent(image)}`;
+            window.location.href = url;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
